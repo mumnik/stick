@@ -114,6 +114,8 @@ func CoerceBool(v Value) bool {
 		return vc > 0
 	case float64:
 		return vc > 0
+	case map[string]string:
+	        return len(vc) > 0	
 	case string:
 		return len(vc) > 0
 	case decimal.Decimal:
