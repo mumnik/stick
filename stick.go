@@ -1,9 +1,9 @@
-package stick // import "github.com/tyler-sommer/stick"
+package stick // import "github.com/mumnik/stick"
 
 import (
 	"io"
 
-	"github.com/tyler-sommer/stick/parse"
+	"github.com/mumnik/stick/parse"
 )
 
 // A Template represents a named template and its contents.

@@ -1,12 +1,12 @@
 // Package filter provides built-in filters for Twig-compatibility.
-package filter // import "github.com/tyler-sommer/stick/twig/filter"
+package filter // import "github.com/mumnik/stick/twig/filter"
 
 import (
 	"math"
 	"strings"
 	"unicode/utf8"
 
-	"github.com/tyler-sommer/stick"
+	"github.com/mumnik/stick"
 	"reflect"
 	"time"
 )

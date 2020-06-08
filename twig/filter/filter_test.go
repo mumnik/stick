@@ -3,7 +3,7 @@ package filter
 import (
 	"testing"
 
-	"github.com/tyler-sommer/stick"
+	"github.com/mumnik/stick"
 	"time"
 	"strings"
 )

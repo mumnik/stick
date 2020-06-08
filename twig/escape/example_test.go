@@ -3,7 +3,7 @@ package escape_test
 import (
 	"fmt"
 
-	"github.com/tyler-sommer/stick/twig/escape"
+	"github.com/mumnik/stick/twig/escape"
 )
 
 func ExampleHTML() {
