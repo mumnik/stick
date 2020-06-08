@@ -83,6 +83,7 @@ type Boolean interface {
 // CoerceBool coerces the given value into a boolean. Boolean false is returned
 // if the value cannot be coerced.
 func CoerceBool(v Value) bool {
+
 	switch vc := v.(type) {
 	case SafeValue:
 		return CoerceBool(vc.Value())
@@ -115,9 +116,9 @@ func CoerceBool(v Value) bool {
 	case float64:
 		return vc > 0
 	case map[string]string:
-	        return len(vc) > 0
-	case []string:
-		return len(vc) > 0	
+	     return len(vc) > 0
+	case map[string]interface {}:
+		return len(vc) > 0
 	case string:
 		return len(vc) > 0
 	case decimal.Decimal:
@@ -127,6 +128,7 @@ func CoerceBool(v Value) bool {
 	case Number:
 		return vc.Number() > 0
 	}
+	fmt.Println(v)
 	return false
 }
 
